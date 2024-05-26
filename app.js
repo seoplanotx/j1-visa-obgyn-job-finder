@@ -6,7 +6,7 @@ const jobRoutes = require('./routes/jobRoutes');
 const path = require('path');
 const dotenv = require('dotenv');
 
-dotenv.config();
+dotenv.config();  // Load environment variables from .env file
 
 // Create an instance of the Express application
 const app = express();
