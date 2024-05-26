@@ -6,7 +6,6 @@ const jobRoutes = require('./routes/jobRoutes');
 const path = require('path');
 const dotenv = require('dotenv');
 
-// Load environment variables from .env file
 dotenv.config();
 
 // Create an instance of the Express application
@@ -22,10 +21,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', jobRoutes);
 
 // Default port to listen on
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // MongoDB connection string
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/jobboard';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI, {
@@ -35,8 +34,8 @@ mongoose.connect(MONGODB_URI, {
   .then(() => {
     console.log('Connected to MongoDB');
     // Start the server
-    app.listen(PORT, () => {
-      console.log(`Server is running on port ${PORT}`);
+    app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
     });
   })
   .catch((error) => {
