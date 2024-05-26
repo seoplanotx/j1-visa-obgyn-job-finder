@@ -1,0 +1,87 @@
+/* public/styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Header Styles */
+h1 {
+    color: #343a40;
+    text-align: center;
+}
+
+/* Form Styles */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchForm .form-control {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#searchForm .btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Job List Styles */
+#jobList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.job-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    margin: 5px 0;
+}
+
+.job-card .salary {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.job-card .visa-sponsorship {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.job-card .application-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.job-card .application-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.job-card .application-link a:hover {
+    text-decoration: underline;
+}
