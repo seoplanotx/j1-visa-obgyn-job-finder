@@ -4,6 +4,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const jobRoutes = require('./routes/jobRoutes');
 const path = require('path');
+const dotenv = require('dotenv');
+
+// Load environment variables from .env file
+dotenv.config();
 
 // Create an instance of the Express application
 const app = express();
